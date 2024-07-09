@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+
+  transition: all 1s;
+  /* border: 1px solid black; */
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.panelContainer {
+  width: 40dvw;
+  height: 40dvh;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+h3 {
+  position: absolute;
+  top: 110px;
+}
+
+h3:hover {
+  color: orangered;
+  transform: translateY(-10px);
+  transition: all 500ms;
+}
